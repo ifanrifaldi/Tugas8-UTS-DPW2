@@ -170,6 +170,7 @@
                                 </h4>
                             </div>
                             @foreach($list_komen as $komen)
+                            @if($komen->id_artikel == $artikel->id)
                             @if($komen->level == 1)
                             <div class="media">
                                 <a href="#">
@@ -211,6 +212,7 @@
                                    
                                 </div>
                             </div>
+                            @endif
                             @endif
                             @endforeach
                             <!-- <div class="media">
